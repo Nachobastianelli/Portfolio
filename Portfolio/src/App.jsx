@@ -1,7 +1,32 @@
+import { useEffect, useState } from "react";
+import AboutMe from "./components/aboutMe/AboutMe";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import LinkedButtons from "./components/linkedButtons/LinkedButtons";
+import { socialMedia } from "./mocks/socialMedia";
+import Profile from "./components/profile/Profile";
+
 const App = () => {
   return (
-    <div className="min-h-screen bg-[#222] justify-center items-center flex">
-      <h1 className="text-3xl text-white">Hola mundo!</h1>
+    <div
+      className="min-h-screen text-white"
+      style={{
+        background:
+          "radial-gradient(at center top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))",
+      }}
+    >
+      <div className="max-w-[60vw] m-auto w-full ">
+        <div className="flex justify-center items-center mb-24">
+          <Header />
+        </div>
+
+        <Profile buttons={socialMedia} />
+        <AboutMe />
+
+        <div className="flex justify-center items-start mt-6 ">
+          <Footer buttons={socialMedia} />
+        </div>
+      </div>
     </div>
   );
 };
