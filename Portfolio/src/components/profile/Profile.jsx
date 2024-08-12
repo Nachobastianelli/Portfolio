@@ -11,7 +11,7 @@ const Profile = ({ buttons }) => {
   });
 
   return (
-    <div className="flex items-center justify-center p-6  ">
+    <div className="flex items-center justify-center p-6 pt-[100px] mt-[-100px] ">
       <div className="flex flex-col items-start max-w-[60%]">
         <div className="text-4xl font-semibold">
           Hi,{" "}
@@ -26,7 +26,8 @@ const Profile = ({ buttons }) => {
         </h1>
         <p className="mt-4 text-lg ">
           Junior Developer passionate about creating interactive and dynamic web
-          applications. I am currently studying Software Development
+          applications. I am currently studying{" "}
+          <span className="italic text-pink-200">Software Development</span>
         </p>
       </div>
       <div className="ml-8 flex flex-col justify-center items-center gap-3">

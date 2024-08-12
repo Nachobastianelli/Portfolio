@@ -10,3 +10,7 @@
 .content-blur {
   backdrop-filter: blur(5px);
 }
+
+html {
+  scroll-behavior: smooth;
+}

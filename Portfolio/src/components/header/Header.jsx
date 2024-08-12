@@ -21,13 +21,16 @@ const Header = () => {
   };
   return (
     <header
-      className={`fixed top-0 w-full shadow-md bg-opacity-10 blur-0 ${
+      className={`fixed  top-0 w-full z-50 shadow-md bg-opacity-10 blur-0 ${
         isHeaderFixed ? "backdrop-blur-md" : ""
       }`}
     >
       <div className="flex items-center max-w-[60vw] w-full m-auto justify-between px-4 text-white">
-        <div className="hover:scale-110 transition-all ease-in-out duration-300">
-          <a href="#home">
+        <div className="hover:scale-110  transition-all ease-in-out duration-300">
+          <a
+            href="#home"
+            className="transition-all ease-in-out duration-500 hover:text-purple-500"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
