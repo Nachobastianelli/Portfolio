@@ -14,7 +14,7 @@ const Header = () => {
   const [isEnglish, setIsEnglish] = useState(true);
 
   const styleAnchor =
-    "p-4 border-b-2 border-indigo-500 border-opacity-0 hover:border-opacity-100 hover:scale-115 transition-all hover:text-indigo-300 duration-200 cursor-pointer ";
+    "p-4 border-b-2 border-indigo-500 border-opacity-0 hover:border-opacity-100  hover:text-indigo-300 duration-200 cursor-pointer ";
 
   const clickHandler = () => {
     setIsEnglish(!isEnglish);

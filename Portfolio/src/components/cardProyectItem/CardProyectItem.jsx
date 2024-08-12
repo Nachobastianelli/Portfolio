@@ -2,7 +2,7 @@ import React from "react";
 
 const CardProyectItem = ({ urlImage, name, description, tecnologias = [] }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="flex cursor-pointer justify-center max-w-[70%] w-fit m-auto mt-10 items-center rounded-tr-md bg-[#222]">
         <div className="w-[58%]">
           <picture className="">
