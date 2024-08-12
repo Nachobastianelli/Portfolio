@@ -1,10 +1,10 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import myImage from "../../assets/myImage.jpg"; // Asegúrate de que la ruta a tu imagen sea correcta.
+import myImage from "../../assets/myImage.jpg";
 import LinkedButtons from "../linkedButtons/LinkedButtons";
 
 const Profile = ({ buttons }) => {
   const [text] = useTypewriter({
-    words: ["Fullstack Developer", "Designer", "Mogolico"],
+    words: ["Fullstack developer", "Designer", "Student"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 80,
@@ -14,10 +14,14 @@ const Profile = ({ buttons }) => {
     <div className="flex items-center justify-center p-6  ">
       <div className="flex flex-col items-start max-w-[60%]">
         <div className="text-4xl font-semibold">
-          Hi, <span className="font-bold text-indigo-500">I’m Ignacio</span>
+          Hi,{" "}
+          <span className="font-bold bg-gradient-to-tr from-white via-purple-500 to-black bg-clip-text text-transparent">
+            I’m Ignacio
+          </span>
+          👋
         </div>
-        <h1 className="mt-4 text-2xl">
-          I’m a <span className="font-semibold text-indigo-600">{text}</span>
+        <h1 className="mt-4 text-2xl text-wrap ">
+          I’m a <span className="font-semibold text-[#E7CFFF]">{text}</span>
           <Cursor />
         </h1>
         <p className="mt-4 text-lg ">
@@ -30,7 +34,7 @@ const Profile = ({ buttons }) => {
           <img
             src={myImage}
             alt="Ignacio Bastianelli"
-            className="rounded-full w-40 h-40 object-cover border-4 border-indigo-500 shadow-lg"
+            className="w-40 h-40 rounded-full object-cover border-4 border-indigo-500 shadow-lg"
           />
         </div>
         <div>

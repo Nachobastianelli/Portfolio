@@ -5,6 +5,8 @@ import Header from "./components/header/Header";
 import LinkedButtons from "./components/linkedButtons/LinkedButtons";
 import { socialMedia } from "./mocks/socialMedia";
 import Profile from "./components/profile/Profile";
+import CardProyectItem from "./components/cardProyectItem/CardProyectItem";
+import CardProyects from "./components/cardProyects/CardProyects";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
 
         <Profile buttons={socialMedia} />
         <AboutMe />
+
+        <CardProyects />
 
         <div className="flex justify-center items-start mt-6 ">
           <Footer buttons={socialMedia} />

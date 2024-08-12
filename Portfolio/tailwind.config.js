@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgoundImage: {
+
+      }, fontFamily: {
+        pixel: ['"Pixelify Sans"', 'sans-serif'],
+        init: ['Honk', 'sans-serif'],
+        macondo: ['Macondo', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
