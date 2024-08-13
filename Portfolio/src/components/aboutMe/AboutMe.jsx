@@ -1,6 +1,9 @@
 const AboutMe = () => {
   return (
-    <section id="about-me" className="mb-20 pt-[30px] mt-[-30px]">
+    <section
+      id="about-me"
+      className="mb-20 pt-[30px] mt-[-30px] max-w-[800px] mx-auto w-[80%]lg:m-auto lg:mb-20"
+    >
       <h1 className="flex pt-12 items-center justify-start text-3xl font-semibold text-[#E7CFFF] mt-8 max-w-[82%] mx-auto">
         About me 🧑🏽‍🎓
       </h1>

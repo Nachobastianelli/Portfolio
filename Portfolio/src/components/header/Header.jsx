@@ -25,7 +25,7 @@ const Header = () => {
         isHeaderFixed ? "backdrop-blur-md" : ""
       }`}
     >
-      <div className="flex items-center max-w-[60vw] w-full m-auto justify-between px-4 text-white">
+      <div className="flex items-center max-w-[90vh] sm:max-w-[75vw] md:max-w-[60vw] w-full m-auto justify-between lg:justify-around px-4 text-white">
         <div className="hover:scale-110  transition-all ease-in-out duration-300">
           <a
             href="#home"

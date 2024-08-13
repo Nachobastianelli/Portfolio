@@ -1,12 +1,16 @@
 import myImage from "../../assets/myImage.jpg";
+import ContactMe from "../contactMe/ContactMe";
 
-const CardProfile = () => {
+const CardProfile = ({ isVisible, onClose }) => {
+  if (!isVisible) {
+    return null;
+  }
   return (
     <>
-      <h1 className="flex  items-center pt-[112px] mt-[-2px] pb-20  justify-center text-3xl font-semibold text-[#E7CFFF]  max-w-[82%] mx-auto">
+      <h1 className="flex  mb-11 items-center  pt-[112px] mt-[-2px] pb-20  justify-center text-3xl font-semibold text-[#E7CFFF]  max-w-[82%] mx-auto">
         Contact Me 😊
       </h1>
-      <div className="flex justify-center items-center min-h-screen">
+      <div className="flex justify-center items-center ">
         <div className="w-full ml-1 mr-1 flex flex-col justify-center items-center sm:w-96 border-gray-700 text-center">
           <div className="w-full rounded-2xl p-8 text-white bg-gradient-to-br from-[#5f99f9] to-[#8868dc] pb-44 relative">
             <h1 className="text-xl mb-4">Hi everyone!</h1>
@@ -18,14 +22,17 @@ const CardProfile = () => {
             </h2>
             <img
               src={myImage}
-              className="w-20 h-20 border-purple-500 border object-cover rounded-full mt-7"
+              className="w-20 h-20 border-purple-500 border-2 object-cover rounded-full mt-7"
             />
             <p className="mt-3 font-semibold text-lg text-black">Ignacio</p>
             <span className="text-slate-500 rounded-xl border-slate-100 text-sm mt-2 pl-3 pr-3 border-[1px]">
               <span className="bg-green-500 w-2 h-2 rounded-full mt-0.5 inline-block"></span>{" "}
               Active
             </span>
-            <button className="w-full gradient rounded-md text-black p-4 mt-4 hover:shadow-xl hover:bg-gray-200 hover:italic transition-all duration-200 ease-in">
+            <button
+              className="w-full gradient bg-gray-100 border border-gray-400 rounded-md text-black p-4 mt-4 hover:shadow-xl hover:bg-gradient-to-br from-[#5f99f9] to-[#987bff]  hover:italic transition-all duration-200 ease-in"
+              onClick={isVisible}
+            >
               Send a message
             </button>
           </div>
