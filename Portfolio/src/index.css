@@ -14,3 +14,149 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes galaxyBlur {
+  0% {
+    transform: translate(-10%, -10%) scale(1);
+    background-position: 0% 50%;
+  }
+  50% {
+    transform: translate(10%, 10%) scale(1.2);
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: translate(-10%, -10%) scale(1);
+    background-position: 0% 50%;
+  }
+}
+@keyframes galaxyMove {
+  0% {
+    clip-path: polygon(
+      60% 20%,
+      80% 40%,
+      100% 60%,
+      80% 80%,
+      60% 100%,
+      40% 80%,
+      20% 60%,
+      40% 40%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      50% 10%,
+      90% 30%,
+      100% 70%,
+      70% 90%,
+      50% 100%,
+      30% 70%,
+      10% 50%,
+      30% 20%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      60% 20%,
+      80% 40%,
+      100% 60%,
+      80% 80%,
+      60% 100%,
+      40% 80%,
+      20% 60%,
+      40% 40%
+    );
+  }
+}
+
+.animate-galaxyMove {
+  animation: galaxyMove 8s ease-in-out infinite;
+}
+
+.animate-galaxyBlur {
+  animation: galaxyBlur 10s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0% {
+    clip-path: polygon(
+      50% 25%,
+      60% 40%,
+      80% 40%,
+      70% 60%,
+      80% 80%,
+      60% 75%,
+      50% 90%,
+      40% 75%,
+      20% 80%,
+      30% 60%,
+      20% 40%,
+      40% 40%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      60% 30%,
+      70% 45%,
+      90% 45%,
+      75% 65%,
+      90% 85%,
+      70% 80%,
+      60% 95%,
+      50% 80%,
+      30% 85%,
+      35% 65%,
+      25% 45%,
+      45% 45%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 25%,
+      60% 40%,
+      80% 40%,
+      70% 60%,
+      80% 80%,
+      60% 75%,
+      50% 90%,
+      40% 75%,
+      20% 80%,
+      30% 60%,
+      20% 40%,
+      40% 40%
+    );
+  }
+}
+
+.animate-blob {
+  animation: blob 12s infinite;
+}
+
+.animate-floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

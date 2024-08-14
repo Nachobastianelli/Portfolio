@@ -34,12 +34,19 @@ const Profile = ({ buttons }) => {
           </p>
         </div>
       </div>
-      <div className="lg:ml-8 flex flex-col justify-center items-center gap-3">
-        <div>
+      <div className="lg:ml-8 flex flex-col justify-center items-center gap-3 relative">
+        <div className="relative w-40 h-40">
+          <div
+            className="absolute inset-0 w-full rounded-full h-full bg-gradient-to-r from-blue-700 via-purple-700 to-cyan-600 opacity-80 animate-galaxyBlur"
+            style={{
+              filter: "blur(30px)",
+            }}
+          ></div>
+
           <img
             src={myImage}
             alt="Ignacio Bastianelli"
-            className="min-w-40 min-h-40 w-40 h-40 rounded-full object-cover border-4 border-indigo-500 shadow-lg"
+            className="w-full h-full rounded-full object-cover border-4 border-indigo-500 shadow-lg animate-floating"
           />
         </div>
         <div>

@@ -1,6 +1,7 @@
 import useToast from "../../hooks/useToast";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = ({ isVisible, onClose }) => {
   const { showToast } = useToast();
@@ -21,6 +22,7 @@ const ContactMe = ({ isVisible, onClose }) => {
   const nameRef = useRef(null);
   const messageRef = useRef(null);
   const subjectRef = useRef(null);
+  const formRef = useRef();
 
   if (!isVisible) {
     return null;
@@ -140,6 +142,18 @@ const ContactMe = ({ isVisible, onClose }) => {
 
     if (formIsValid) {
       showToast(t("exito"), true);
+      emailjs
+        .sendForm("service_twn47xs", "template_5mf4ion", formRef.current, {
+          publicKey: "NnywUHhnH32znLbyn",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
       const messageEmail = {
         name: name,
         email: email,
@@ -188,7 +202,7 @@ const ContactMe = ({ isVisible, onClose }) => {
               <p className="text-gray-500">{t("fill")}</p>
             </div>
 
-            <form onSubmit={submitFormHandler}>
+            <form onSubmit={submitFormHandler} ref={formRef}>
               <div className="flex mb-4 space-x-2">
                 <div className="w-full">
                   <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -198,6 +212,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     ref={nameRef}
                     onChange={handleName}
                     value={name}
+                    name="name"
                     className={`shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                       errors.name.error ? "border-red-500" : ""
                     }`}
@@ -217,6 +232,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     ref={emailRef}
                     onChange={handleEmail}
                     value={email}
+                    name="email"
                     className={`shadow appearance-none  border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                       errors.email.error ? "border-red-500" : ""
                     }`}
@@ -236,6 +252,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     ref={subjectRef}
                     onChange={handleSubject}
                     value={subject}
+                    name="subject"
                     className={`shadow appearance-none border rounded  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                       errors.subject.error ? "border-red-500" : ""
                     }`}
