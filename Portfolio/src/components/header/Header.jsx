@@ -1,7 +1,10 @@
 import { ArgIcon, EeuuIcon } from "../../icons/icons";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  const { t, i18n } = useTranslation("header");
 
   const handleScroll = () => {
     setIsHeaderFixed(window.scrollY > 0);
@@ -13,12 +16,21 @@ const Header = () => {
   }, []);
   const [isEnglish, setIsEnglish] = useState(true);
 
+  const changeLanguaje = () => {
+    let languaje = isEnglish ? "es" : "en";
+    i18n.changeLanguage(languaje);
+  };
+
   const styleAnchor =
     "p-4 border-b-2 border-indigo-500 border-opacity-0 hover:border-opacity-100  hover:text-indigo-300 duration-200 cursor-pointer ";
 
   const clickHandler = () => {
+    changeLanguaje();
     setIsEnglish(!isEnglish);
   };
+
+  const flag = isEnglish ? <ArgIcon /> : <EeuuIcon />;
+  const text = isEnglish ? <p>AR</p> : <p>EN</p>;
   return (
     <header
       className={`fixed  top-0 w-full z-50 shadow-md bg-opacity-10 blur-0 ${
@@ -51,34 +63,21 @@ const Header = () => {
         </div>
         <div className="flex gap-6">
           <a className={styleAnchor} href="#about-me">
-            About me
+            {t("title1")}
           </a>
           <a className={styleAnchor} href="#proyects">
-            My proyects
+            {t("title2")}
           </a>
           <a className={styleAnchor} href="#contact">
-            Contact me
+            {t("title3")}
           </a>
         </div>
-        <div className="flex items-center ">
-          <div className="relative inline-block w-10 h-6 select-none">
-            <input
-              onChange={clickHandler}
-              type="checkbox"
-              name="toggle"
-              id="toggle"
-              className="absolute opacity-0 w-full h-full cursor-pointer"
-              checked={!isEnglish}
-            />
-            <div className="block bg-gray-300 w-full h-full rounded-full"></div>
-            <div
-              className={`absolute left-0 top-0 h-full w-6 rounded-full bg-white border-gray-300 flex items-center justify-center transition-transform duration-300 ease-in-out transform ${
-                isEnglish ? "translate-x-0" : "translate-x-[80%]"
-              }`}
-            >
-              {isEnglish ? <EeuuIcon /> : <ArgIcon />}
-            </div>
-          </div>
+        <div
+          className="border-gray-300 flex gap-2 border rounded-md py-2 px-4 cursor-pointer hover:bg-gray-500 hover:bg-opacity-10"
+          onClick={clickHandler}
+        >
+          <div>{flag}</div>
+          <div>{text}</div>
         </div>
       </div>
     </header>

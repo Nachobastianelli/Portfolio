@@ -1,0 +1,11 @@
+{
+  "title": "Proyectos",
+  "waikiki": {
+    "name": "Waikiki 🏝️",
+    "description": "Un E-commerce con autenticación de usuarios, carro de la compra y generación de facturas para realizar compras en línea sin problemas."
+  },
+  "discordBot": {
+    "name": "Discord Bot 🤖",
+    "description": "Un bot de discord musical en construcción hecho con Node JS + Librerías."
+  }
+}

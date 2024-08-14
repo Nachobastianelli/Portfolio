@@ -1,5 +1,6 @@
 import useToast from "../../hooks/useToast";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactMe = ({ isVisible, onClose }) => {
   const { showToast } = useToast();
@@ -13,6 +14,8 @@ const ContactMe = ({ isVisible, onClose }) => {
     subject: { error: false, message: "" },
     message: { error: false, message: "" },
   });
+
+  const { t, i18n } = useTranslation("contact");
 
   const emailRef = useRef(null);
   const nameRef = useRef(null);
@@ -64,7 +67,7 @@ const ContactMe = ({ isVisible, onClose }) => {
         ...prevErrors,
         name: {
           error: true,
-          message: "Please, enter name.",
+          message: t("errorName"),
         },
       }));
       formIsValid = false;
@@ -83,7 +86,7 @@ const ContactMe = ({ isVisible, onClose }) => {
         ...prevErrors,
         email: {
           error: true,
-          message: "Please, enter email.",
+          message: t("errorEmail"),
         },
       }));
       formIsValid = false;
@@ -102,7 +105,7 @@ const ContactMe = ({ isVisible, onClose }) => {
         ...prevErrors,
         message: {
           error: true,
-          message: "Please, enter message.",
+          message: t("errorMessage"),
         },
       }));
       formIsValid = false;
@@ -121,7 +124,7 @@ const ContactMe = ({ isVisible, onClose }) => {
         ...prevErrors,
         subject: {
           error: true,
-          message: "please, enter subject",
+          message: t("errorSubject"),
         },
       }));
       formIsValid = false;
@@ -136,7 +139,7 @@ const ContactMe = ({ isVisible, onClose }) => {
     }
 
     if (formIsValid) {
-      showToast("The email has been sent succesfully", true);
+      showToast(t("exito"), true);
       const messageEmail = {
         name: name,
         email: email,
@@ -181,17 +184,15 @@ const ContactMe = ({ isVisible, onClose }) => {
           </button>
           <div className="p-5 max-h-[80%] overflow-y-auto">
             <div className="text-center pb-6">
-              <h1 className="text-3xl">Contact Us!</h1>
-              <p className="text-gray-500">
-                Fill up the form below to send us a message.
-              </p>
+              <h1 className="text-3xl text-gray-600">{t("concat")}</h1>
+              <p className="text-gray-500">{t("fill")}</p>
             </div>
 
             <form onSubmit={submitFormHandler}>
               <div className="flex mb-4 space-x-2">
                 <div className="w-full">
                   <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Name
+                    {t("name")}
                   </label>
                   <input
                     ref={nameRef}
@@ -202,7 +203,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     }`}
                     id="name"
                     type="text"
-                    placeholder="username"
+                    placeholder={t("phN")}
                   />
                   {errors.name.error && (
                     <p className="text-red-500 text-xs italic">
@@ -210,7 +211,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     </p>
                   )}
                   <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Email
+                    {t("email")}
                   </label>
                   <input
                     ref={emailRef}
@@ -221,7 +222,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     }`}
                     id="email"
                     type="text"
-                    placeholder="Email"
+                    placeholder={t("phE")}
                   />
                   {errors.email.error && (
                     <p className="text-red-500 text-xs italic">
@@ -229,7 +230,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     </p>
                   )}
                   <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Subject
+                    {t("subject")}
                   </label>
                   <input
                     ref={subjectRef}
@@ -240,7 +241,7 @@ const ContactMe = ({ isVisible, onClose }) => {
                     }`}
                     id="subject"
                     type="text"
-                    placeholder="Subject"
+                    placeholder={t("phS")}
                   />
                   {errors.subject.error && (
                     <p className="text-red-500 text-xs italic">
@@ -248,13 +249,13 @@ const ContactMe = ({ isVisible, onClose }) => {
                     </p>
                   )}
                   <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Message
+                    {t("message")}
                   </label>
                   <textarea
                     className={`shadow appearance-none border rounded  w-full py-2 px-3 text-gray-700 resize-none leading-tight focus:outline-none focus:shadow-outline ${
                       errors.message.error ? "border-red-500" : ""
                     }`}
-                    placeholder="Your message..."
+                    placeholder={t("phM")}
                     name="message"
                     rows={4}
                     ref={messageRef}
@@ -274,11 +275,12 @@ const ContactMe = ({ isVisible, onClose }) => {
                   onClick={handleReset}
                   className="shadow cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="reset"
+                  value={t("buttonR")}
                 />
                 <input
                   className="shadow bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
-                  value="Send 📥"
+                  value={t("buttonS")}
                 />
               </div>
             </form>
