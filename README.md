@@ -12,3 +12,8 @@
 <p align="left"><strong>- Tailwind CSS:</strong> A utility-first CSS framework for rapid UI development.</p>
 <p align="left"><strong>- JavaScript (ES6+):</strong> For handling logic and interactivity.</p>
 <p align="left"><strong>- HTML5 & CSS3:</strong> For structuring and styling the web pages.</p>
+
+###
+<h3>Link:</h3>
+  
+<a href="https://classy-marigold-c0e1ca.netlify.app">-→ Click here ←-</a>
