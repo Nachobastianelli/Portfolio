@@ -12,6 +12,7 @@ import ContactMe from "./components/contactMe/ContactMe";
 import CardProfile from "./components/cardProfile/CardProfile";
 import { useTranslation } from "react-i18next";
 import { Suspense } from "react";
+import Stack from "./components/stack/Stack";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -27,7 +28,7 @@ const App = () => {
   return (
     <Suspense fallback="Loading translations...">
       <div
-        className="min-h-screen text-white "
+        className="min-h-screen text-white overflow-x-hidden"
         style={{
           background:
             "radial-gradient(at center top, rgb(55, 65, 81), #223, #050510)",
@@ -49,6 +50,9 @@ const App = () => {
           </section>
           <section id="contact" className="mb-24">
             <CardProfile isVisible={openModal} />
+          </section>
+          <section className="mb-24">
+            <Stack />
           </section>
           <div className="flex justify-center items-start mt-6 ">
             <Footer buttons={socialMedia} />
