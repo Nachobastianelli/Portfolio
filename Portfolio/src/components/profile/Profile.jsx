@@ -2,6 +2,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import myImage from "../../assets/myImage.jpg";
 import LinkedButtons from "../linkedButtons/LinkedButtons";
 import { useTranslation } from "react-i18next";
+import { LaptopIcon } from "../../icons/icons";
 
 const Profile = ({ buttons }) => {
   const { t, i18n } = useTranslation(["profile"]);
@@ -20,7 +21,7 @@ const Profile = ({ buttons }) => {
           <span className="font-bold bg-gradient-to-tr from-white via-purple-500 to-black bg-clip-text text-transparent">
             {t("title")}
           </span>
-          👋
+          <span> 👋</span>
         </div>
         <h1 className="mt-4 text-2xl text-wrap ">
           {t("antes")}{" "}
@@ -30,7 +31,9 @@ const Profile = ({ buttons }) => {
         <div className="lg: max-w-[800px]">
           <p className="mt-4 text-lg ">
             {t("text")}{" "}
-            <span className="italic text-pink-200">{t("extra")}</span>
+            <span className="flex gap-1 italic text-pink-200">
+              {t("extra")} <LaptopIcon />{" "}
+            </span>
           </p>
         </div>
       </div>
