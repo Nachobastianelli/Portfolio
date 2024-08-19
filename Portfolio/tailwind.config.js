@@ -5,12 +5,11 @@ export default {
     extend: {
       backgoundImage: {},
       fontFamily: {
-        pixel: ['"Pixelify Sans"', "sans-serif"],
-        init: ["Honk", "sans-serif"],
-        macondo: ["Macondo", "sans-serif"],
+        onest: ['Onest Variable', 'system-ui', 'sans-serif'],
       },
       screens: {
         xs: "415px",
+        header: "909px"
       },
     },
   },

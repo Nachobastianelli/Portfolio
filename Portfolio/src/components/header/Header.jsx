@@ -38,7 +38,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center max-w-[90vh] sm:max-w-[75vw] md:max-w-[60vw] w-full m-auto justify-between lg:justify-around px-4 text-white">
-        <div className="hover:scale-110  transition-all ease-in-out duration-300">
+        <div className="hover:scale-110  transition-all ease-in-out duration-300 ml-10 md:ml-0">
           <a
             href="#home"
             className="transition-all ease-in-out duration-500 hover:text-[#00b7ff]"
@@ -61,7 +61,7 @@ const Header = () => {
             </svg>
           </a>
         </div>
-        <div className="flex gap-6">
+        <div className="gap-6 hidden header:flex ">
           <a className={styleAnchor} href="#about-me">
             {t("title1")}
           </a>
@@ -73,7 +73,7 @@ const Header = () => {
           </a>
         </div>
         <div
-          className="border-gray-300 flex gap-2 border rounded-md py-2 px-4 cursor-pointer hover:bg-gray-500 hover:bg-opacity-10"
+          className="border-gray-300 flex gap-2 border rounded-md py-2 px-4 cursor-pointer hover:bg-gray-500 hover:bg-opacity-10 mr-10 md:mr-0 my-2 header:my-0"
           onClick={clickHandler}
         >
           <div>{flag}</div>

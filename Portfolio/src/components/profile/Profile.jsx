@@ -14,20 +14,22 @@ const Profile = ({ buttons }) => {
   });
 
   return (
-    <div className="flex flex-col gap-20 m-auto lg:gap-0 lg:flex-row  max-w-[700px] items-center justify-center p-6 pt-[100px] mt-[-100px] ">
+    <div className="flex flex-col gap-20 m-auto lg:gap-0 lg:flex-row  max-w-[700px] items-center justify-center p-6 pt-[100px] mt-[-100px] font-onest">
       <div className="flex flex-col items-start w-[90%]">
         <div className="text-4xl font-semibold">
           {t("saludo")}{" "}
-          <span className="font-bold text-[#00b7ff]">{t("title")}</span>
+          <span className="font-bold text-[#00b7ff] font-onest">
+            {t("title")}
+          </span>
           <span> 👋</span>
         </div>
-        <h1 className="mt-4 text-2xl text-wrap ">
+        <h1 className="mt-4 text-2xl text-wrap font-onest">
           {t("antes")}{" "}
           <span className="font-semibold text-[#bfedff]">{text}</span>
           <Cursor />
         </h1>
         <div className="lg: max-w-[800px]">
-          <p className="mt-4 text-lg ">
+          <p className="mt-4 text-lg font-onest">
             {t("text")}{" "}
             <span className="italic text-[#f6ffd0]  ">
               <span className="inline-block">{t("extra")}</span>
