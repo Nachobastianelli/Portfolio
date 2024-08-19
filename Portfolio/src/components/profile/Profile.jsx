@@ -18,21 +18,22 @@ const Profile = ({ buttons }) => {
       <div className="flex flex-col items-start w-[90%]">
         <div className="text-4xl font-semibold">
           {t("saludo")}{" "}
-          <span className="font-bold bg-gradient-to-tr from-white via-purple-500 to-black bg-clip-text text-transparent">
-            {t("title")}
-          </span>
+          <span className="font-bold text-[#00b7ff]">{t("title")}</span>
           <span> 👋</span>
         </div>
         <h1 className="mt-4 text-2xl text-wrap ">
           {t("antes")}{" "}
-          <span className="font-semibold text-[#E7CFFF]">{text}</span>
+          <span className="font-semibold text-[#bfedff]">{text}</span>
           <Cursor />
         </h1>
         <div className="lg: max-w-[800px]">
           <p className="mt-4 text-lg ">
             {t("text")}{" "}
-            <span className="flex gap-1 italic text-pink-200">
-              {t("extra")} <LaptopIcon />{" "}
+            <span className="italic text-[#f6ffd0]  ">
+              <span className="inline-block">{t("extra")}</span>
+              <span className="inline-block align-middle mb-[6px]  ">
+                <LaptopIcon />{" "}
+              </span>
             </span>
           </p>
         </div>
@@ -40,7 +41,7 @@ const Profile = ({ buttons }) => {
       <div className="lg:ml-8 flex flex-col justify-center items-center gap-3 relative">
         <div className="relative w-40 h-40">
           <div
-            className="absolute inset-0 w-full rounded-full h-full bg-gradient-to-r from-blue-700 via-purple-700 to-cyan-600 opacity-80 animate-galaxyBlur"
+            className="absolute inset-0 w-full rounded-full h-full bg-gradient-to-r from-blue-300 via-blue-700 to-blue-300 opacity-80 animate-galaxyBlur"
             style={{
               filter: "blur(30px)",
             }}
@@ -49,7 +50,7 @@ const Profile = ({ buttons }) => {
           <img
             src={myImage}
             alt="Ignacio Bastianelli"
-            className="w-full h-full rounded-full object-cover border-4 border-indigo-500 shadow-lg animate-floating"
+            className="w-full h-full rounded-full object-cover border-4 border-[#00b7ff] shadow-lg animate-floating"
           />
         </div>
         <div>

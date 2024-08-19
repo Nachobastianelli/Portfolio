@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   const styleAnchor =
-    "p-4 border-b-2 border-indigo-500 border-opacity-0 hover:border-opacity-100  hover:text-indigo-300 duration-200 cursor-pointer ";
+    "p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100  hover:text-blue-400 duration-200 cursor-pointer ";
 
   const clickHandler = () => {
     changeLanguaje();
@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   const flag = isEnglish ? <ArgIcon /> : <EeuuIcon />;
-  const text = isEnglish ? <p>AR</p> : <p>EN</p>;
+  const text = isEnglish ? <p>ES</p> : <p>EN</p>;
   return (
     <header
       className={`fixed  top-0 w-full z-50 shadow-md bg-opacity-10 blur-0 ${
@@ -41,7 +41,7 @@ const Header = () => {
         <div className="hover:scale-110  transition-all ease-in-out duration-300">
           <a
             href="#home"
-            className="transition-all ease-in-out duration-500 hover:text-purple-500"
+            className="transition-all ease-in-out duration-500 hover:text-[#00b7ff]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

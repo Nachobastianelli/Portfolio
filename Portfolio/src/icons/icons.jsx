@@ -13,5 +13,5 @@ export function EeuuIcon() {
 }
 
 export function LaptopIcon() {
-  return <img src={laptop} alt="Me" className="h-7 w-7"></img>;
+  return <img src={laptop} alt="Me" className="h-7 w-7 m-auto"></img>;
 }

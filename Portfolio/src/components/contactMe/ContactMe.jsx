@@ -290,12 +290,12 @@ const ContactMe = ({ isVisible, onClose }) => {
               <div className="flex justify-between">
                 <input
                   onClick={handleReset}
-                  className="shadow cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="shadow cursor-pointer bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="reset"
                   value={t("buttonR")}
                 />
                 <input
-                  className="shadow bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="shadow bg-blue-500 cursor-pointer hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
                   value={t("buttonS")}
                 />

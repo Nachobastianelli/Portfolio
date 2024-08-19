@@ -23,7 +23,7 @@ const Stack = () => {
       rotateXMax={20}
       rotateYMax={20}
     >
-      <div className="flex flex-col border-gray-500 border bg-gradient-to-tr from-[#000] to-[#240655] justify-center rounded-lg hover:scale-105 transition-all ease-in-out duration-300">
+      <div className="flex flex-col border-gray-500 border bg-gradient-to-tr from-[#000] to-[#00205c] justify-center rounded-lg hover:scale-105 transition-all ease-in-out duration-300">
         <div
           className="flex justify-center items-center gap-2 border-b-gray-500 py-3 border-b"
           data-atropos-offset="10"
