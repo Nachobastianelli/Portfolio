@@ -10,8 +10,12 @@ const CardProfile = ({ isVisible, onClose }) => {
   return (
     <>
       <div className="pt-[112px] mt-[-2px]">
-        <h1 className="flex  mb-11 items-center cursor-pointer hover:underline underline-offset-8  pb-20  justify-center text-3xl font-semibold text-[#bfedff]  max-w-[82%] mx-auto">
-          <a href="#contact">{t("title")}</a>
+        <h1 className="flex  mb-11 items-center pb-20 justify-center max-w-[82%] mx-auto">
+          <a href="#contact">
+            <h1 className="cursor-pointer hover:underline underline-offset-8 text-3xl font-semibold text-[#bfedff]">
+              {t("title")}
+            </h1>
+          </a>
         </h1>
       </div>
       <div className="flex justify-center items-center ">

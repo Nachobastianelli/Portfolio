@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   const styleAnchor =
-    "p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100  hover:text-blue-400 duration-200 cursor-pointer ";
+    "p-4 border-b-2 border-blue-500 border-opacity-0  hover:border-opacity-100  hover:text-blue-400 duration-200 cursor-pointer ";
 
   const clickHandler = () => {
     changeLanguaje();
@@ -73,7 +73,7 @@ const Header = () => {
           </a>
         </div>
         <div
-          className="border-gray-300 flex gap-2 border rounded-md py-2 px-4 cursor-pointer hover:bg-gray-500 hover:bg-opacity-10 mr-10 md:mr-0 my-2 header:my-0"
+          className="border-gray-300 flex gap-2 border w-[85.4px] rounded-md py-2 px-4 cursor-pointer hover:bg-gray-500 active:bg-gray-600 active:bg-opacity-10  hover:bg-opacity-10 mr-10 md:mr-0 my-2 header:my-0"
           onClick={clickHandler}
         >
           <div>{flag}</div>

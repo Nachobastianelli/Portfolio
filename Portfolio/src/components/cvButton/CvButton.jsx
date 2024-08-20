@@ -4,7 +4,7 @@ const CvButton = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = `assets/Ignacio-Bastianelli-CV.pdf`;
-    link.download = "Mi-Curriculum.pdf";
+    link.download = "Ignacio-Bastianelli-Curriculum.pdf";
     link.click();
   };
 

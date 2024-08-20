@@ -5,10 +5,16 @@ const Footer = ({ buttons }) => {
   const { t, i18n } = useTranslation("footer");
   return (
     <div className="bg-black bg-opacity-15 mt-auto p-4 min-w-[100vw]">
-      <p className="flex justify-center text-white items-center text-center mb-3 ">
-        {t("text1")}
-        <br />
-        {t("text2")}
+      <p className="flex flex-col justify-center text-white items-center text-center mb-3 ">
+        <div>
+          {t("text1")}{" "}
+          <span className="text-[#ffcaca] font-semibold italic">
+            {" "}
+            Ignacio Bastianelli{" "}
+          </span>
+        </div>
+
+        <div>{t("text2")}</div>
       </p>
 
       <div className="flex justify-center mb-2">
