@@ -31,7 +31,7 @@ const Profile = ({ buttons }) => {
         <div className="lg: max-w-[800px]">
           <p className="mt-4 text-lg font-onest">
             {t("text")}{" "}
-            <span className="italic text-[#f6ffd0]  ">
+            <span className="italic text-[#f6ffd0]   ">
               <span className="inline-block">{t("extra")}</span>
               <span className="inline-block align-middle mb-[6px]  ">
                 <LaptopIcon />{" "}

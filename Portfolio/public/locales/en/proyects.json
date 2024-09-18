@@ -4,8 +4,12 @@
     "name": "Waikiki 🏝️",
     "description": "An e-commerce platform with user authentication, a shopping cart, and invoice generation for seamless online shopping."
   },
-  "discordBot": {
-    "name": "Discord Bot 🤖",
-    "description": "A music discord bot under construction made with Node JS + Libraries."
+  "ecommerceApi": {
+    "name": "Ecommerce rest api 💻",
+    "description": "A RESTful API for an e-commerce platform built with .NET, featuring SQL database, JWT-based authentication, and Clean Architecture. (Under construction)"
+  },
+  "blog": {
+    "name": "Blog 📝",
+    "description": "A personal blog where I show a bit of what I do in my day to day life."
   }
 }
