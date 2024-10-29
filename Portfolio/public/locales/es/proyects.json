@@ -6,7 +6,7 @@
   },
   "ecommerceApi": {
     "name": "Ecommerce api rest 💻",
-    "description": "Una API RESTful para una plataforma de e-commerce implementada en .NET, con base de datos SQL, autenticación con JWT y arquitectura limpia. (En construcción)"
+    "description": "Una API RESTful para una plataforma de e-commerce implementada en .NET, con base de datos SQL, autenticación con JWT y arquitectura limpia. "
   },
   "blog": {
     "name": "Blog 📝",

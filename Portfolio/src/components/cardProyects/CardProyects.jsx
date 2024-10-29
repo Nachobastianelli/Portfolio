@@ -13,7 +13,7 @@ const CardProyects = () => {
         <h1 className="flex items-center justify-center mb-6 max-w-[82%] mx-auto">
           <a href="#proyects">
             <h1 className="cursor-pointer hover:underline underline-offset-8 text-3xl font-semibold text-[#bfedff] ">
-              {t("title")} 🧑🏽
+              {t("title")} 💼
             </h1>
           </a>
         </h1>

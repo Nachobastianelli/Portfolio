@@ -16,7 +16,7 @@ const CardProyectItem = ({
             href={link}
             className="flex flex-col md:flex-row cursor-pointer justify-center items-center rounded-tr-md bg-[#222]"
           >
-            <div className="min-w-fit md:min-w-[58%] w-[58%]">
+            <div className="min-w-fit md:min-w-[58%] w-[58%] ">
               <picture className="">
                 <source
                   srcSet={urlImage}
@@ -26,7 +26,7 @@ const CardProyectItem = ({
                 <img
                   src={urlImage}
                   alt={name}
-                  className="rounded-tl-md rounded-tr-md md:rounded-tr-none w-fit h-full object-fill"
+                  className="rounded-tl-md rounded-tr-md md:rounded-tr-none  object-fill w-[348px] h-[200px]"
                 />
               </picture>
             </div>
@@ -37,7 +37,7 @@ const CardProyectItem = ({
                 </h1>
               </div>
               <div>
-                <p className="text-lg line-clamp-3 md:line-clamp-4 text-center md:text-left mb-2 md:mb-0 active:line-clamp-none lg:line-clamp-4 hover:line-clamp-none  italic">
+                <p className="text-lg line-clamp-3 md:line-clamp-4 text-center md:text-left mb-2 md:mb-0 active:line-clamp-none lg:line-clamp-4 hover:line-clamp-none hover:text-base italic">
                   {description}
                 </p>
               </div>

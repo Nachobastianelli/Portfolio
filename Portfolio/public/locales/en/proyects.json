@@ -6,7 +6,7 @@
   },
   "ecommerceApi": {
     "name": "Ecommerce rest api 💻",
-    "description": "A RESTful API for an e-commerce platform built with .NET, featuring SQL database, JWT-based authentication, and Clean Architecture. (Under construction)"
+    "description": "A RESTful API for an e-commerce platform built with .NET, featuring SQL database, JWT-based authentication, and Clean Architecture."
   },
   "blog": {
     "name": "Blog 📝",
