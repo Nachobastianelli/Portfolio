@@ -12,6 +12,7 @@ const CardProyectItem = ({
       <div className="w-[70%] max-w-[600px] m-auto mt-10 overflow-hidden hover:scale-105 transform transition-transform duration-300">
         <div className="">
           <a
+            target="_blank"
             href={link}
             className="flex flex-col md:flex-row cursor-pointer justify-center items-center rounded-tr-md bg-[#222]"
           >
@@ -19,13 +20,13 @@ const CardProyectItem = ({
               <picture className="">
                 <source
                   srcSet={urlImage}
-                  className="rounded-md h-full"
-                  media="(min-width: 600px)"
+                  className="rounded-md h-full "
+                  media="(min-width: 600px) "
                 />
                 <img
                   src={urlImage}
                   alt={name}
-                  className="rounded-tl-md rounded-tr-md md:rounded-tr-none w-fit h-full object-cover"
+                  className="rounded-tl-md rounded-tr-md md:rounded-tr-none w-fit h-full object-fill"
                 />
               </picture>
             </div>

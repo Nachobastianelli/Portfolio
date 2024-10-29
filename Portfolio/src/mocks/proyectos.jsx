@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import blogPhoto from "../assets/BlogPhoto.png";
+import bodezPhoto from "../assets/bannerBodez.PNG";
 
 export const useProyects = () => {
   const { t } = useTranslation("proyects");
@@ -38,8 +39,8 @@ export const useProyects = () => {
           name: ".NET",
         },
         {
-          logo: "https://dwglogo.com/wp-content/uploads/2018/03/SQLite_Vector_logo-1024x705.png",
-          name: "SQLite",
+          logo: "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000",
+          name: "SQL Server",
         },
       ],
     },
@@ -63,8 +64,33 @@ export const useProyects = () => {
           name: ".NET",
         },
         {
-          logo: "https://e7.pngegg.com/pngimages/162/121/png-clipart-microsoft-sql-server-computer-servers-sql-server-management-studio-microsoft-angle-triangle.png",
-          name: "SQL server",
+          logo: "https://dwglogo.com/wp-content/uploads/2018/03/SQLite_Vector_logo-1024x705.png",
+          name: "SQLite",
+        },
+      ],
+    },
+    {
+      urlImage: bodezPhoto,
+      name: t("bodez.name"),
+      description: t("bodez.description"),
+      link: "https://github.com/nachobastianelli/Bodez-Inmobiliaria",
+
+      tecnologias: [
+        {
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          name: "React",
+        },
+        {
+          logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+          name: "Tailwind CSS",
+        },
+        {
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/2048px-Microsoft_.NET_logo.svg.png",
+          name: ".NET",
+        },
+        {
+          logo: "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000",
+          name: "SQL Server",
         },
       ],
     },

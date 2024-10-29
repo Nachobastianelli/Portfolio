@@ -11,5 +11,9 @@
   "blog": {
     "name": "Blog 📝",
     "description": "Un blog personal donde muestro un poco de lo que hago en mi dia a dia."
+  },
+  "bodez": {
+    "name": "Bodez 🏡",
+    "description": "Una plataforma inmobiliaria diseñada para destacar información detallada y exclusiva de propiedades, brindando a los clientes una visión completa del mercado."
   }
 }
