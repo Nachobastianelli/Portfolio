@@ -1,5 +1,9 @@
 {
   "title": "Proyectos",
+  "votos": {
+    "name": "Votaciones Argentinas",
+    "description": "Una plataforma web interactiva para la visualización de datos electorales en Argentina, con gráficos y estadísticas dinámicos por provincia."
+  },
   "waikiki": {
     "name": "Waikiki 🏝️",
     "description": "Un E-commerce con autenticación de usuarios, carro de la compra y generación de facturas para realizar compras en línea sin problemas."

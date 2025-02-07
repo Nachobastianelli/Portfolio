@@ -1,5 +1,9 @@
 {
   "title": "Proyects",
+  "votos": {
+    "name": "Argentine Elections",
+    "description": "An interactive web platform for visualizing electoral data in Argentina, featuring dynamic charts and statistics by province."
+  },
   "waikiki": {
     "name": "Waikiki 🏝️",
     "description": "An e-commerce platform with user authentication, a shopping cart, and invoice generation for seamless online shopping."

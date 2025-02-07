@@ -51,7 +51,17 @@ export const tech = [
   },
   {
     id: 11,
-    logo: "https://camo.githubusercontent.com/165409eeaa703a2539749559ecc8097953071a1dc28642210728dc0b4a050465/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f73716c6974652f73716c6974652d6f726967696e616c2e737667",
-    name: "Sqlite",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    name: "MySql",
+  },
+  {
+    id: 12,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    name: "Node",
+  },
+  {
+    id: 13,
+    logo: "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000",
+    name: "Express",
   },
 ];
