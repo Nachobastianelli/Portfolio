@@ -13,6 +13,7 @@ import CardProfile from "./components/cardProfile/CardProfile";
 import { useTranslation } from "react-i18next";
 import { Suspense } from "react";
 import Stack from "./components/stack/Stack";
+import Experience from "./components/experience/Experience";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -42,6 +43,9 @@ const App = () => {
             <Profile buttons={socialMedia} />
           </section>
           <CvButton />
+          <section id="experience">
+            <Experience />
+          </section>
           <section id="about-me">
             <AboutMe />
           </section>

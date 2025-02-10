@@ -36,7 +36,7 @@ const CardProyectItem = ({
                 </h1>
               </div>
               <div>
-                <p className="text-lg line-clamp-3 md:line-clamp-4 text-center md:text-left mb-2 md:mb-0 active:line-clamp-none lg:line-clamp-none italic">
+                <p className="text-lg line-clamp-3 md:line-clamp-4 text-center md:text-left mb-2 md:mb-0 active:line-clamp-none hover:line-clamp-none lg:line-clamp-none italic">
                   {description}
                 </p>
               </div>
