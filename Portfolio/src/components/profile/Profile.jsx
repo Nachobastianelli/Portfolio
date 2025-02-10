@@ -21,7 +21,11 @@ const Profile = ({ buttons }) => {
           <span className="font-bold text-[#00b7ff] font-onest">
             {t("title")}
           </span>
-          <span> 👋</span>
+          <img
+            className="inline-block mb-3 ml-3"
+            src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
+            width="35"
+          ></img>
         </div>
         <h1 className="mt-4 text-2xl text-wrap font-onest">
           {t("antes")}{" "}
@@ -31,7 +35,7 @@ const Profile = ({ buttons }) => {
         <div className="lg: max-w-[800px]">
           <p className="mt-4 text-lg font-onest">
             {t("text")}{" "}
-            <span className="italic text-[#f6ffd0]  ">
+            <span className="italic text-[#f6ffd0]   ">
               <span className="inline-block">{t("extra")}</span>
               <span className="inline-block align-middle mb-[6px]  ">
                 <LaptopIcon />{" "}

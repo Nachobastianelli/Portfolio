@@ -1,11 +1,23 @@
 {
   "title": "Proyectos",
+  "votos": {
+    "name": "Votaciones Argentinas",
+    "description": "Una plataforma web interactiva para la visualización de datos electorales en Argentina, con gráficos y estadísticas dinámicos por provincia."
+  },
   "waikiki": {
     "name": "Waikiki 🏝️",
     "description": "Un E-commerce con autenticación de usuarios, carro de la compra y generación de facturas para realizar compras en línea sin problemas."
   },
-  "discordBot": {
-    "name": "Discord Bot 🤖",
-    "description": "Un bot de discord musical en construcción hecho con Node JS + Librerías."
+  "ecommerceApi": {
+    "name": "Ecommerce api rest 💻",
+    "description": "Una API RESTful para una plataforma de e-commerce implementada en .NET, con base de datos SQL, autenticación con JWT y arquitectura limpia. "
+  },
+  "blog": {
+    "name": "Blog 📝",
+    "description": "Un blog personal donde muestro un poco de lo que hago en mi dia a dia."
+  },
+  "bodez": {
+    "name": "Bodez 🏡",
+    "description": "Una plataforma inmobiliaria diseñada para destacar información detallada y exclusiva de propiedades, brindando a los clientes una visión completa del mercado."
   }
 }

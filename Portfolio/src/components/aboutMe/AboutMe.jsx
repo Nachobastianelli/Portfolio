@@ -14,9 +14,14 @@ const AboutMe = () => {
           </h1>
         </a>
       </div>
-      <p className="mx-auto flex items-center justify-center max-w-[82%] leading-7 text-white mt-4">
-        {t("title")}
-      </p>
+      <div className="flex items-start justify-center text-start text-lg">
+        <p className="inline-block max-w-[82%] leading-7 text-white mt-4 text-start">
+          {t("title")}{" "}
+          <span className="italic px-1 bg-indigo-400 bg-opacity-50 text-red-100 font-medium">
+            {t("extra")}
+          </span>
+        </p>
+      </div>
     </section>
   );
 };
