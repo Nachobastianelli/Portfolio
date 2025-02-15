@@ -29,13 +29,13 @@ const App = () => {
   return (
     <Suspense fallback="Loading translations...">
       <div
-        className="min-h-screen text-white overflow-x-hidden "
+        className="min-h-screen text-white overflow-x-hidden  "
         style={{
           background:
             "radial-gradient(at center top, rgb(55, 65, 81), #223, #050510)",
         }}
       >
-        <div className="max-w-[70vw] m-auto w-full ">
+        <div className="sm:max-w-[70vw] m-auto w-[90%] ">
           <div className="flex justify-center items-center mb-24">
             <Header />
           </div>

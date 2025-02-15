@@ -1,3 +1,4 @@
+import logoNetizar from "../assets/logoNetizar.png";
 import { useTranslation } from "react-i18next";
 
 export const useProyects = () => {
@@ -6,6 +7,7 @@ export const useProyects = () => {
   const experiences = [
     {
       id: 1,
+      image: logoNetizar,
       date: "January 2025",
       title: "Fullstack Developer at Netizar S.A.",
       shortDescription:

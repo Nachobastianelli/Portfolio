@@ -17,21 +17,19 @@ const ExperienceItem = ({ date, title, shortDescription, experience }) => {
           experience={experience}
         />
       )}
-      <ol className="relative border-s border-gray-200 dark:border-gray-700 max-w-[70vw] m-auto w-full">
-        <li className="mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+      <ol className="relative border-s border-gray-200 dark:border-gray-700  m-auto w-full">
+        <li className="mb-10 ms-4 ">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-[#bfedff] dark:bg-[#00b7ff] "></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             {date}
           </time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {title}
-          </h3>
+          <h3 className="text-2xl font-semibold text-white ">{title}</h3>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
             {shortDescription}
           </p>
           <button
             onClick={handleOpenCloseModal}
-            className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="inline-flex items-center  p-1 text-md font-medium text-gray-200 mb-2 hover:text-gray-400 transition-all ease-in-out duration-400 hover:underline underline-offset-8 "
           >
             Learn more{" "}
             <svg

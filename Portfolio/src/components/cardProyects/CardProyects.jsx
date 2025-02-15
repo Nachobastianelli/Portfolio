@@ -1,6 +1,7 @@
 import CardProyectItem from "../cardProyectItem/CardProyectItem";
 import { useProyects } from "../../mocks/proyectos";
 import { useTranslation } from "react-i18next";
+import { IconCode } from "@tabler/icons-react";
 
 const CardProyects = () => {
   const proyects = useProyects();
@@ -11,9 +12,13 @@ const CardProyects = () => {
     <>
       <div className="pt-[70px] mt-[-70px]">
         <h1 className="flex items-center justify-center mb-6 max-w-[82%] mx-auto">
-          <a href="#proyects">
-            <h1 className="cursor-pointer hover:underline underline-offset-8 text-3xl font-semibold text-[#bfedff] ">
-              {t("title")} 💼
+          <a
+            href="#proyects"
+            className="flex items-center gap-3 link link-underline link-underline-black w-fit pb-2 text-[#bfedff] "
+          >
+            <IconCode stroke={2} className="size-8" />
+            <h1 className="  cursor-pointer  text-3xl font-semibold  ">
+              {t("title")}
             </h1>
           </a>
         </h1>
