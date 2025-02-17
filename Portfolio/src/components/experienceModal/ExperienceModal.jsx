@@ -1,34 +1,29 @@
+import { useProyects } from "../../mocks/proyectos";
+import { useTranslation } from "react-i18next";
 const ExperienceModal = ({ openClose, experience }) => {
-  console.log(experience); // Esto te ayudará a ver los datos que llegan al modal
+  const experiences = useProyects();
 
-  const data = {
-    date: experience?.date,
-    title: experience?.title,
-    description: experience?.description,
-    shortDescription: experience?.shortDescription,
-    image: experience?.image,
-  };
+  const { t } = useTranslation("experience");
 
   return (
     <div
       id="default-modal"
       tabIndex="-1"
-      aria-hidden="true"
-      className="fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-50 modal-background"
+      className="innert fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-50 modal-background"
     >
       <div className="relative p-4 w-full max-w-2xl bg-white rounded-lg shadow-sm dark:bg-gray-700 modal-content">
         <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-600">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-col xs:flex-row">
             <div className="relative size-12">
               <div className="absolute inset-0 bg-white  rounded-2xl"></div>
               <img
-                src={data.image}
+                src={experience.image}
                 alt="Logo de empresa netizar"
                 className="size-12 relative rounded-xl"
               />
             </div>
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white ">
-              {data.title || "Title Not Available"}
+              {t(`netizar.title`)}
             </h3>
           </div>
 
@@ -57,10 +52,10 @@ const ExperienceModal = ({ openClose, experience }) => {
         </div>
         <div className="p-4 space-y-4">
           <p className="text-lg leading-relaxed text-gray-300 dark:text-gray-300">
-            {data.date || "Date not available"}
+            {t(`netizar.date`)}
           </p>
           <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-            {data.description || "Description not available"}
+            {t(`netizar.description`)}
           </p>
         </div>
         <div className="flex items-center p-4 border-t border-gray-200 dark:border-gray-600">

@@ -1,6 +1,7 @@
 import myImage from "../../assets/image.jpg";
 import ContactMe from "../contactMe/ContactMe";
 import { useTranslation } from "react-i18next";
+import { IconContract } from "@tabler/icons-react";
 const CardProfile = ({ isVisible, onClose }) => {
   const { t, i18n } = useTranslation("contact");
   if (!isVisible) {
@@ -8,17 +9,19 @@ const CardProfile = ({ isVisible, onClose }) => {
   }
 
   return (
-    <>
-      <div className="pt-[112px] mt-[-2px]">
-        <h1 className="flex  mb-11 items-center pb-20 justify-center max-w-[82%] mx-auto">
-          <a href="#contact">
-            <h1 className="cursor-pointer hover:underline underline-offset-8 text-3xl font-semibold text-[#bfedff]">
-              {t("title")}
-            </h1>
-          </a>
-        </h1>
+    <section
+      id="contact"
+      className="mb-20 pt-[42px] mt-[-30px] max-w-[680px] mx-auto sm:w-[80%] w-full lg:m-auto lg:mb-40"
+    >
+      <div className="flex items-center  gap-2 link link-underline link-underline-black w-fit cursor-pointer sm:mx-auto">
+        <a href="#contact " className="flex items-center ">
+          <IconContract stroke={2} className="size-9 text-[#bfedff]" />
+          <h1 className="text-3xl font-semibold m-2 text-[#bfedff]  ">
+            {t("title")}
+          </h1>
+        </a>
       </div>
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center mt-20 ">
         <div className="w-full ml-1 mr-1 flex flex-col justify-center items-center sm:w-96 border-gray-700 text-center">
           <div className="w-full rounded-2xl p-8 text-white bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 pb-44 relative">
             <h1 className="text-xl mb-4">{t("subtitle")}</h1>
@@ -44,7 +47,7 @@ const CardProfile = ({ isVisible, onClose }) => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 export default CardProfile;

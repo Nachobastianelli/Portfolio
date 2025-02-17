@@ -14,8 +14,8 @@ const Profile = ({ buttons }) => {
   });
 
   return (
-    <div className="flex flex-col gap-20 m-auto lg:gap-0 lg:flex-row  max-w-[700px] items-center justify-center p-6 pt-[100px] mt-[-100px] font-onest">
-      <div className="flex flex-col items-start w-[90%]">
+    <div className="flex flex-col gap-20 m-auto lg:gap-0 lg:flex-row  max-w-[680px] items-center justify-center  pt-[100px] mt-[-100px] ">
+      <div className="flex flex-col items-start w-[100%]">
         <div className="text-4xl font-semibold">
           {t("saludo")}{" "}
           <span className="font-bold text-[#00b7ff] font-onest">

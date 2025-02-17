@@ -9,20 +9,19 @@ const CardProyects = () => {
   const { t } = useTranslation("proyects");
 
   return (
-    <>
-      <div className="pt-[70px] mt-[-70px]">
-        <h1 className="flex items-center justify-center mb-6 max-w-[82%] mx-auto">
-          <a
-            href="#proyects"
-            className="flex items-center gap-3 link link-underline link-underline-black w-fit pb-2 text-[#bfedff] "
-          >
-            <IconCode stroke={2} className="size-8" />
-            <h1 className="  cursor-pointer  text-3xl font-semibold  ">
-              {t("title")}
-            </h1>
-          </a>
-        </h1>
+    <section
+      id="proyects"
+      className="mb-20 pt-[42px] mt-[-30px] max-w-[680px] mx-auto sm:w-[80%] w-full lg:m-auto lg:mb-20"
+    >
+      <div className="flex items-center gap-2 link link-underline link-underline-black w-fit cursor-pointer mb-5 mr-4">
+        <a href="#proyects" className="flex items-center">
+          <IconCode stroke={2} className="size-9 text-[#bfedff]" />
+          <h1 className="text-3xl font-semibold m-2 text-[#bfedff]  ">
+            {t("title")}
+          </h1>
+        </a>
       </div>
+
       <div className="grid grid-cols-1 gap-8">
         {proyects.map((proyect, index) => (
           <CardProyectItem
@@ -35,7 +34,7 @@ const CardProyects = () => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

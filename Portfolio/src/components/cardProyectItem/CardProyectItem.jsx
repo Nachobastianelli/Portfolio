@@ -8,8 +8,8 @@ const CardProyectItem = ({
   link,
 }) => {
   return (
-    <div className="flex flex-col items-center ">
-      <div className="w-[70%] max-w-[600px] m-auto mt-10 overflow-hidden hover:scale-105 transform transition-transform duration-300">
+    <div className="flex flex-col items-start ">
+      <div className="sm:w-[85%] w-[95%] max-w-[600px] m-auto mt-10 overflow-hidden hover:scale-105 transform transition-transform duration-300">
         <div className="">
           <a
             target="_blank"
@@ -26,7 +26,7 @@ const CardProyectItem = ({
                 <img
                   src={urlImage}
                   alt={name}
-                  className="rounded-tl-md rounded-tr-md md:rounded-tr-none  object-fill w-[348px] h-[200px]"
+                  className="rounded-tl-md rounded-tr-md md:rounded-tr-none  object-fill sm:object-fill sm:w-[348px] w-full sm:h-[200px] h-full"
                 />
               </picture>
             </div>
