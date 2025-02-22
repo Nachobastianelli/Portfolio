@@ -45,7 +45,7 @@ const Stack = () => {
         >
           <div
             data-atropos-offset="5"
-            className=" shadow-lg grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid py-2"
+            className=" shadow-lg grid grid-cols-3 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid py-2"
           >
             {techsMapped}
           </div>

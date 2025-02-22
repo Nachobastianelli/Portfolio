@@ -1,7 +1,9 @@
 import { useState } from "react";
 import ExperienceModal from "../experienceModal/ExperienceModal";
+import { useTranslation } from "react-i18next";
 
 const ExperienceItem = ({ date, title, shortDescription, experience }) => {
+  const { t, i18n } = useTranslation(["experience"]);
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenCloseModal = () => {
@@ -31,7 +33,7 @@ const ExperienceItem = ({ date, title, shortDescription, experience }) => {
             onClick={handleOpenCloseModal}
             className="inline-flex items-center  p-1 text-md font-medium text-gray-200 mb-2 hover:text-gray-400 transition-all ease-in-out duration-400 hover:underline underline-offset-8 "
           >
-            Learn more{" "}
+            {t("open")}{" "}
             <svg
               className="w-3 h-3 ms-2 rtl:rotate-180"
               aria-hidden="true"

@@ -1,5 +1,5 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import myImage from "../../assets/myImage.jpg";
+import myImage from "../../assets/imagePortf.jpg";
 import LinkedButtons from "../linkedButtons/LinkedButtons";
 import { useTranslation } from "react-i18next";
 import { LaptopIcon } from "../../icons/icons";
